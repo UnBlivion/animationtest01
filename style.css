@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#animar{
+    height: 10px;
+    width: 10px;
+    border: solid black 2px;
+    background-color: blue;
+    transition-duration: 2s;
+}
+
+#animar:hover{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    transform: rotate(45deg);
+    transition: cubic-bezier(0,-1.07,1,1.94))   
+}
+
+@media(max-width:1000px){
+    #animar{
+        transform: translateY(300px);
+    }
+}
